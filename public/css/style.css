@@ -1,0 +1,16 @@
+#imgpos {
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -110px;
+    margin-top: -130px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.fundo {
+
+    background-color: #3A3535;
+
+}
