@@ -37,6 +37,11 @@
                     {
                         daysOfWeek: [1, 2, 3, 4, 5],
                         startTime: '14:00',
+                        endTime: '15:00' 
+                    },
+                    {
+                        daysOfWeek: [1, 2, 3, 4, 5],
+                        startTime: '16:00',
                         endTime: '18:00' 
                     }
                 ],
