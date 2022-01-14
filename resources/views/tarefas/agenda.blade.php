@@ -30,29 +30,19 @@
                 slotDuration: '00:30:00',
                 businessHours: [
                     {
-                        daysOfWeek: [1, 2, 3, 4, 5], 
+                        daysOfWeek: [1], 
                         startTime: '08:00', 
-                        endTime: '12:00' 
+                        endTime: '08:30' 
                     },
                     {
-                        daysOfWeek: [1, 2, 3, 4, 5],
-                        startTime: '14:00',
-                        endTime: '15:00' 
-                    },
-                    {
-                        daysOfWeek: [1, 2, 3, 4, 5],
-                        startTime: '16:00',
-                        endTime: '18:00' 
+                        daysOfWeek: [1], 
+                        startTime: '08:30', 
+                        endTime: '09:00'
                     }
                 ],
                 events: [{
                         title: 'All Day Event',
                         start: '2020-09-01',
-                    },
-                    {
-                        title: 'Long Event',
-                        start: '2020-09-07',
-                        end: '2020-09-10'
                     },
                     {
                         groupId: 999,
