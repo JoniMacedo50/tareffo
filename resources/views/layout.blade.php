@@ -29,6 +29,7 @@
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
                             <a class="nav-link active" aria-current="page" href="/tareffo/inicio">Inicio</a>
+                            <a class="nav-link active" href="/tareffo/agenda">Agenda</a>
                             <a class="nav-link active" href="/tareffo/listarTarefas">Tarefas</a>
                             <a class="nav-link active" href="/tareffo/listaEmpresas">Empresas</a>
                             <a class="nav-link active" href="/tareffo/listaUsuarios">Usuarios</a>
