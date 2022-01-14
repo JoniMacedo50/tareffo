@@ -1,10 +1,11 @@
-<!DOCTYPE html>
-<html lang='en'>
+@extends('layout')
 
-<head>
-    <meta charset='utf-8' />
-    <link href="{{ asset('css/fullcalendar/main.css') }}" rel='stylesheet' />
-    <script src="{{ asset('js/fullcalendar/main.js') }}"></script>
+
+@section('titulo')
+    Agenda
+@endsection
+
+@section('conteudo')
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             var calendarEl = document.getElementById('calendar');
@@ -12,7 +13,7 @@
             var calendar = new FullCalendar.Calendar(calendarEl, {
                 height: '100%',
                 expandRows: true,
-                slotMinTime: '08:00',
+                slotMinTime: '06:00',
                 slotMaxTime: '20:00',
                 headerToolbar: {
                     left: 'prev,next today',
@@ -110,10 +111,10 @@
 
         #calendar-container {
             position: fixed;
-            top: 0;
+            top: 20%;
             left: 0;
             right: 0;
-            bottom: 0;
+            bottom: 5%;
         }
 
         .fc-header-toolbar {
@@ -128,13 +129,8 @@
 
     </style>
 </head>
-
-<body>
-
-    <div id='calendar-container'>
+    <div class="container" id='calendar-container'>
         <div id='calendar'></div>
     </div>
 
-</body>
-
-</html>
+    @endsection
