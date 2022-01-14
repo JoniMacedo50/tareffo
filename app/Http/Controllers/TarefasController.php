@@ -11,7 +11,7 @@ use App\Models\Anexo;
 use App\Models\Json;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Mail;
+//use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Http;
 
 
@@ -60,7 +60,7 @@ class TarefasController extends Controller
 				$tipo = 'Desenvolvimento';
 			};
 
-			Mail::send('mail.index', [
+			/*Mail::send('mail.index', [
 				'solicitacao' => $request->solicitacao,
 				'empresa'  => $request->empresa,
 				'solicitante' => $request->solicitante,
@@ -69,9 +69,9 @@ class TarefasController extends Controller
 				$mensagem->from('joni.macedo50@gmail.com', 'Joni Macedo');
 				$mensagem->to('macedojoni50@gmail.com', 'Joni');
 				$mensagem->subject('Nova solicitação');
-			});
+			});*/
 			Session::put('msgTarefa', 'Tarefa cadastrada com sucesso!');
-			Session::put('msgEmail', 'Email enviado com sucesso!');
+			//Session::put('msgEmail', 'Email enviado com sucesso!');
 			return redirect('/tareffo/listarTarefas');
 
 		} else {

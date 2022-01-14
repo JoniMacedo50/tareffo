@@ -35,7 +35,7 @@ Route::get('/tareffo/login', function () {
 Route::post('/tareffo/login', [LoginController::class, 'validaLogin'])->name('valida.login');
 Route::get('/tareffo/inicio', [InicioController::class, 'inicio'])->name('inicio');
 Route::get('/tareffo/logout', [LoginController::class, 'logout']);
-
+Route::get('/tareffo/agenda', [InicioController::class, 'agenda']);
 //rotas de usuarios
 Route::get('/tareffo/listaUsuarios', function () {
     if (session()->has('login')) {
@@ -52,7 +52,7 @@ Route::any('/tareffo/{id}/usuario', [UsuariosController::class, 'updateUsuario']
 Route::delete('/tareffo/deleteUsuario/{id}', [UsuariosController::class, 'destroyUsuario']);
 
 //rotas de tarefas
-Route::get('/tareffo/listarTarefas', [TarefasController::class, 'indexTarefas']);
+Route::get('/tareffo/listarTarefas', [TarefasController::class, 'indexTarefas'])->name('tarefas.listar');
 Route::get('/tareffo/filtrarTarefa', [TarefasController::class, 'listTarefas'])->name('tarefas.filtrar');
 Route::get('/tareffo/cadastrarTarefa', [TarefasController::class, 'create']);
 Route::post('/tareffo/cadastrarTarefa', [TarefasController::class, 'store']);

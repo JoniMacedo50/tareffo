@@ -12,7 +12,11 @@
                 <div class="card-body">
                     <h5 class="card-title">Atenção</h5>
                     <p class="card-text">Você tem um total de <strong>{{$tarefas}}</strong> tarefas atrasadas e não concluídas</p>
-                    <a href="#" class="btn btn-primary">Ir</a>
+                    <form method="GET" action="{{route('tarefas.listar')}}">
+                        @csrf
+
+                        <input type="submit" class="btn btn-primary" value="Ir">
+                    </form>    
                 </div>
             </div>
         </div>

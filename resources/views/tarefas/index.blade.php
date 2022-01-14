@@ -152,17 +152,14 @@
                         aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <div id="gridAnexo">
-                    </div>
+                    <div id="gridAnexo"></div>
                     <form name="formVisualizaAnexo" method="GET" action="{{ route('exibir.anexo') }}"
                         id="formVisualizaAnexo">
                         @csrf
                         <input type="hidden" class="IdExibeAnexo" name="IdExibeAnexo">
                     </form>
-                  
                 </div>
-                <div class="modal-footer">
-                </div>
+                <div class="modal-footer"></div>
             </div>
         </div>
     </div>

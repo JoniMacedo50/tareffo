@@ -27,4 +27,11 @@ class InicioController extends Controller
 		}
 	}
 
+	public function agenda()
+	{
+		
+			return view('tarefas.agenda');
+		
+	}
+
 }
