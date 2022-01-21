@@ -85,6 +85,21 @@
                         start: '2020-09-13T07:00:00'
                     },
                     {
+                        groupId: 999,
+                        title: 'Repeating Event',
+                        start: '2022-01-17T08:00:00',
+                        end: '2022-01-17T08:30:00',
+                        display: 'inverse-background'
+                    },
+                    {
+                        groupId: 999,
+                        title: 'Repeating Event',
+                        start: '2022-01-17T08:30:00',
+                        end: '2022-01-17T09:00:00',
+                        display: 'inverse-background'
+
+                    },
+                    {
                         title: 'Click for Google',
                         url: 'http://google.com/',
                         start: '2020-09-28'

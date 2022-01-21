@@ -24,7 +24,11 @@
                 <label for="" class="form-label"><strong>Senha</strong></label>
                 <input type="password" class="form-control" id="password" name="senha" required autocomplete="current-password">
             </div>
-            {{Session::get('msg')}}
+            @if (Session::get('msg'))
+            <div class="mb-3 alert alert-danger"">
+                {{Session::get('msg')}}
+                </div>
+            @endif
             <button type="submit" class="btn btn-dark">Entrar</button>
         </form>
     </div>
